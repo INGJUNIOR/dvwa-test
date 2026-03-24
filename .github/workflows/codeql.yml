@@ -14,7 +14,6 @@ jobs:
       contents: read
       security-events: write
 
-    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,8 +21,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4
         with:
-          languages: actions
+          languages: php
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v4
-     
